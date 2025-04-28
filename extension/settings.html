@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskLokr Settings</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="settings-container">
+    <div class="header">
+      <i class="fas fa-brain logo-icon"></i>
+      <h1>TaskLokr Settings</h1>
+    </div>
+    
+    <div class="settings-section">
+      <h2><i class="fas fa-ban"></i> Blocked Websites</h2>
+      <p class="section-desc">Add websites that distract you. TaskLokr will block them during focus mode.</p>
+      
+      <div class="blocked-sites-list" id="blockedSitesList">
+        <!-- Sites will be displayed here -->
+      </div>
+      
+      <div class="add-site-form">
+        <input type="text" id="newSite" placeholder="Add site (e.g. facebook.com)" class="site-input">
+        <button id="addSiteBtn" class="btn btn-add"><i class="fas fa-plus"></i> Add</button>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h2><i class="fas fa-gear"></i> Focus Settings</h2>
+      <div class="setting-option">
+        <label class="setting-label">
+          <input type="checkbox" id="showNotifications"> 
+          <span>Show notifications when sites are blocked</span>
+        </label>
+      </div>
+      <div class="setting-option">
+        <label class="setting-label">
+          <input type="checkbox" id="autoStartTimer"> 
+          <span>Auto-start focus timer when Chrome opens</span>
+        </label>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button id="saveSettingsBtn" class="btn btn-save"><i class="fas fa-save"></i> Save Settings</button>
+    </div>
+
+    <div class="navigation-links">
+      <a href="popup.html"><i class="fas fa-home"></i> Home</a>
+      <a href="dashboard.html"><i class="fas fa-chart-bar"></i> Dashboard</a>
+    </div>
+  </div>
+  <script src="settings.js"></script>
+</body>
+</html>
